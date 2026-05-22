@@ -9,12 +9,12 @@ on:
     branches: [main]
     tags: ["v*"]
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-# â  AEGIS AGENT PATTERNS TRIGGERED:                                            â
-# â  â¦ docker  â  "docker error" / "image not found" / "registry"              â
-# â  â¦ auth    â  "permission denied" / "unauthorized" / "403"                 â
-# â  â¦ timeout â  "timed out" / "deadline exceeded"                             â
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+# Ã¢ÂÂ  AEGIS AGENT PATTERNS TRIGGERED:                                            Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ docker  Ã¢ÂÂ  "docker error" / "image not found" / "registry"              Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ auth    Ã¢ÂÂ  "permission denied" / "unauthorized" / "403"                 Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ timeout Ã¢ÂÂ  "timed out" / "deadline exceeded"                             Ã¢ÂÂ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 permissions:
   contents: write
@@ -22,15 +22,15 @@ permissions:
 
 jobs:
 
-  # ââ JOB 5: docker-build âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: docker â "image not found" / "docker error"
-  # AEGIS PATTERN: auth   â "permission denied" / "unauthorized"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 5: docker-build Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: docker Ã¢ÂÂ "image not found" / "docker error"
+  # AEGIS PATTERN: auth   Ã¢ÂÂ "permission denied" / "unauthorized"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   docker-build:
     name: Docker Build & Push
     # BUG 13: Windows runner cannot run Docker commands
     # ACTUAL ERROR: "docker: command not found"
-    # AEGIS PATTERN MATCH: "command not found" â category=environment
+    # AEGIS PATTERN MATCH: "command not found" Ã¢ÂÂ category=environment
     runs-on: windows-latest
 
     steps:
@@ -39,9 +39,9 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          # BUG 14: Secrets not defined â Docker login gets empty credentials
+          # BUG 14: Secrets not defined Ã¢ÂÂ Docker login gets empty credentials
           # ACTUAL ERROR: "Error response from daemon: unauthorized: incorrect username or password"
-          # AEGIS PATTERN MATCH: "unauthorized" â category=auth
+          # AEGIS PATTERN MATCH: "unauthorized" Ã¢ÂÂ category=auth
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
@@ -54,7 +54,7 @@ jobs:
           context: .
           # BUG 15: Dockerfile doesn't exist in repo
           # ACTUAL ERROR: "failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory"
-          # AEGIS PATTERN MATCH: "docker.*error" + "no such file" â category=docker
+          # AEGIS PATTERN MATCH: "docker.*error" + "no such file" Ã¢ÂÂ category=docker
           file: ./Dockerfile
           push: true
           # BUG 16: Invalid characters in Docker image tag
@@ -64,30 +64,30 @@ jobs:
             myorg/aegis-app:${{ github.sha }}
           # BUG 17: Non-existent base image referenced in build-args
           # ACTUAL ERROR: "docker: Error response from daemon: manifest for node:99-alpine not found"
-          # AEGIS PATTERN MATCH: "image.*not found" â category=docker
+          # AEGIS PATTERN MATCH: "image.*not found" Ã¢ÂÂ category=docker
           build-args: |
             BASE_IMAGE=node:99-alpine
 
       - name: Push to private registry
-        # BUG 18: Registry URL is fake â connection will be refused
+        # BUG 18: Registry URL is fake Ã¢ÂÂ connection will be refused
         # ACTUAL ERROR: "Error response: connection refused" or "dial tcp: i/o timeout"
-        # AEGIS PATTERN MATCH: "connection refused" â category=network
+        # AEGIS PATTERN MATCH: "connection refused" Ã¢ÂÂ category=network
         run: |
           docker tag myorg/aegis-app:latest registry.fake-internal.corp/aegis-app:latest
           docker push registry.fake-internal.corp/aegis-app:latest
 
-  # ââ JOB 6: vulnerability-scan ââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: docker â "image not found"
-  # AEGIS PATTERN: timeout â "timed out"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 6: vulnerability-scan Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: docker Ã¢ÂÂ "image not found"
+  # AEGIS PATTERN: timeout Ã¢ÂÂ "timed out"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   vulnerability-scan:
     continue-on-error: true
     name: Security Scan
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latesttt
     needs: [docker-build]
-    # BUG 19: timeout is too low (1 minute) â Trivy scan always times out
+    # BUG 19: timeout is too low (1 minute) Ã¢ÂÂ Trivy scan always times out
     # ACTUAL ERROR: "The operation was canceled" / "timed out"
-    # AEGIS PATTERN MATCH: "timed out" â category=timeout
+    # AEGIS PATTERN MATCH: "timed out" Ã¢ÂÂ category=timeout
     timeout-minutes: 1
 
     steps:
@@ -96,7 +96,7 @@ jobs:
       - name: Pull image to scan
         # BUG 20: The image was never actually pushed (docker job failed)
         # ACTUAL ERROR: "Error response from daemon: manifest ... not found"
-        # AEGIS PATTERN MATCH: "image.*not found" â category=docker
+        # AEGIS PATTERN MATCH: "image.*not found" Ã¢ÂÂ category=docker
         run: docker pull myorg/aegis-app:latest
 
       - name: Run Trivy scanner
@@ -106,7 +106,7 @@ jobs:
           image-ref: myorg/aegis-app:latest
           format: sarif
           output: trivy-results.sarif
-          # BUG 22: timeout too short â enforces the timeout-minutes bug
+          # BUG 22: timeout too short Ã¢ÂÂ enforces the timeout-minutes bug
           timeout: 30s
 
       - name: Upload Trivy results
@@ -115,12 +115,12 @@ jobs:
           # BUG 23: File won't exist because scan timed out / failed
           sarif_file: trivy-results.sarif
 
-  # ââ JOB 7: release ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: auth â "permission denied" / "403 Forbidden"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 7: release Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: auth Ã¢ÂÂ "permission denied" / "403 Forbidden"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   release:
     name: Create GitHub Release
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latesttt
     needs: [vulnerability-scan]
     if: startsWith(github.ref, 'refs/tags/v')
 
@@ -129,7 +129,7 @@ jobs:
 
       - name: Generate release notes
         # BUG 24: git-cliff not installed
-        # ACTUAL ERROR: "sh: 1: git-cliff: not found" â "command not found"
+        # ACTUAL ERROR: "sh: 1: git-cliff: not found" Ã¢ÂÂ "command not found"
         run: git-cliff --output CHANGELOG.md
 
       - name: Create Release
@@ -137,11 +137,11 @@ jobs:
         with:
           body_path: CHANGELOG.md
           files: dist/**
-          # BUG 25: Wrong token scope â GITHUB_TOKEN lacks write:packages permission
-          # ACTUAL ERROR: "HttpError: Resource not accessible by integration â 403"
-          # AEGIS PATTERN MATCH: "403" / "forbidden" â category=auth
+          # BUG 25: Wrong token scope Ã¢ÂÂ GITHUB_TOKEN lacks write:packages permission
+          # ACTUAL ERROR: "HttpError: Resource not accessible by integration Ã¢ÂÂ 403"
+          # AEGIS PATTERN MATCH: "403" / "forbidden" Ã¢ÂÂ category=auth
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          # BUG 26: Undefined secret â release signing key not configured
+          # BUG 26: Undefined secret Ã¢ÂÂ release signing key not configured
           # Further auth failure
           RELEASE_SIGN_KEY: ${{ secrets.RELEASE_SIGN_KEY }}
