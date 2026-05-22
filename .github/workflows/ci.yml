@@ -1,4 +1,4 @@
-name: CI â Core Pipeline
+name: CI Ã¢ÂÂ Core Pipeline
 
 on:
   push:
@@ -6,13 +6,13 @@ on:
   pull_request:
     branches: [main]
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-# â  AEGIS AGENT PATTERNS TRIGGERED:                                            â
-# â  â¦ dependency  â  "npm ERR!" / "Cannot find module"                         â
-# â  â¦ environment â  "No such file or directory" / "command not found"         â
-# â  â¦ test        â  test assertion failures                                   â
-# â  â¦ build       â  "Syntax error" / "compilation error"                      â
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+# Ã¢ÂÂ  AEGIS AGENT PATTERNS TRIGGERED:                                            Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ dependency  Ã¢ÂÂ  "npm ERR!" / "Cannot find module"                         Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ environment Ã¢ÂÂ  "No such file or directory" / "command not found"         Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ test        Ã¢ÂÂ  test assertion failures                                   Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ build       Ã¢ÂÂ  "Syntax error" / "compilation error"                      Ã¢ÂÂ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 permissions:
   contents: write
@@ -21,33 +21,33 @@ permissions:
 
 jobs:
 
-  # ââ JOB 1: install ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: dependency â "npm ERR! can not find ... package-lock.json"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 1: install Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: dependency Ã¢ÂÂ "npm ERR! can not find ... package-lock.json"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   install:
     name: Install Dependencies
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latesttt
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          # BUG 1: node-version must be a string â bare number causes setup failure
+          # BUG 1: node-version must be a string Ã¢ÂÂ bare number causes setup failure
           node-version: 20
 
       - name: Install
         # BUG 2: npm install requires package-lock.json which is not committed
         # ACTUAL ERROR AEGIS SEES: "npm ERR! code ENOENT ... package-lock.json"
-        # AEGIS PATTERN MATCH: "npm err" â category=dependency
+        # AEGIS PATTERN MATCH: "npm err" Ã¢ÂÂ category=dependency
         run: npm install
 
-  # ââ JOB 2: lint âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: environment â "command not found"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 2: lint Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: environment Ã¢ÂÂ "command not found"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   lint:
     name: Lint Code
-    runs-on: ubuntu-latestt
-    needs: [test]            # BUG 3: circular â test needs lint, lint needs test
+    runs-on: ubuntu-latesttt
+    needs: [test]            # BUG 3: circular Ã¢ÂÂ test needs lint, lint needs test
     steps:
       - uses: actions/checkout@v4
 
@@ -55,29 +55,29 @@ jobs:
         with:
           node-version: "20"
 
-      # BUG 4: No npm install â eslint binary does not exist
+      # BUG 4: No npm install Ã¢ÂÂ eslint binary does not exist
       # ACTUAL ERROR: "sh: 1: eslint: not found"
-      # AEGIS PATTERN MATCH: "command not found" â category=environment
+      # AEGIS PATTERN MATCH: "command not found" Ã¢ÂÂ category=environment
       - name: Run ESLint
         run: eslint src/ --ext .js --config .eslintrc.json
 
       # BUG 5: .eslintrc.json doesn't exist even if eslint were installed
       # ACTUAL ERROR: "No such file or directory: .eslintrc.json"
-      # AEGIS PATTERN MATCH: "no such file or directory" â category=environment
+      # AEGIS PATTERN MATCH: "no such file or directory" Ã¢ÂÂ category=environment
 
-  # ââ JOB 3: test âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: test â "Cannot find module" / test assertion error
-  # AEGIS PATTERN: dependency â "Cannot find module '../src/utils'"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 3: test Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: test Ã¢ÂÂ "Cannot find module" / test assertion error
+  # AEGIS PATTERN: dependency Ã¢ÂÂ "Cannot find module '../src/utils'"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   test:
     name: Unit Tests
-    runs-on: ubuntu-latestt
-    needs: [install, lint]   # BUG 3 (other side): lint needs test â circular deadlock
+    runs-on: ubuntu-latesttt
+    needs: [install, lint]   # BUG 3 (other side): lint needs test Ã¢ÂÂ circular deadlock
 
     strategy:
       fail-fast: false
       matrix:
-        # BUG 6: Node 14 is EOL â GitHub Actions will reject or warn
+        # BUG 6: Node 14 is EOL Ã¢ÂÂ GitHub Actions will reject or warn
         node-version: [14, 18, 20]
 
     steps:
@@ -87,27 +87,27 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # BUG 7: npm install again â no lockfile
+      # BUG 7: npm install again Ã¢ÂÂ no lockfile
       # ACTUAL ERROR: "npm ERR! code ENOENT ... package-lock.json"
       - run: npm install
 
       - name: Run unit tests
-        # BUG 8: wrong directory â folder is tests/ not test/
+        # BUG 8: wrong directory Ã¢ÂÂ folder is tests/ not test/
         # ACTUAL ERROR: "node:internal/modules/cjs/loader: Cannot find module"
-        # AEGIS PATTERN MATCH: "cannot find module" â category=dependency/test
+        # AEGIS PATTERN MATCH: "cannot find module" Ã¢ÂÂ category=dependency/test
         working-directory: ./test
         run: node unit.js
         env:
-          # BUG 9: undefined secret â empty string â app may error on auth
+          # BUG 9: undefined secret Ã¢ÂÂ empty string Ã¢ÂÂ app may error on auth
           # AEGIS PATTERN MATCH: "unauthorized" or "401" in any downstream log
           NODE_SECRET: ${{ secrets.NODE_SECRET }}
 
-  # ââ JOB 4: build ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: build â "Syntax error" / "No such file or directory"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 4: build Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: build Ã¢ÂÂ "Syntax error" / "No such file or directory"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   build:
     name: Build
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latesttt
     needs: [test]
 
     steps:
@@ -121,14 +121,14 @@ jobs:
 
       - name: Compile TypeScript
         # BUG 10: tsc not installed, tsconfig.json doesn't exist
-        # ACTUAL ERROR: "sh: 1: tsc: not found" â "command not found"
-        # AEGIS PATTERN MATCH: "command not found" â category=environment
+        # ACTUAL ERROR: "sh: 1: tsc: not found" Ã¢ÂÂ "command not found"
+        # AEGIS PATTERN MATCH: "command not found" Ã¢ÂÂ category=environment
         run: tsc --project tsconfig.json --noEmit
 
       - name: Bundle
         # BUG 11: webpack not in package.json, webpack.config.js doesn't exist
         # ACTUAL ERROR: "Cannot find module 'webpack'"
-        # AEGIS PATTERN MATCH: "cannot find module" â category=dependency
+        # AEGIS PATTERN MATCH: "cannot find module" Ã¢ÂÂ category=dependency
         run: npx webpack --config webpack.config.js --mode production
 
       - name: Upload dist
