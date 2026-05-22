@@ -1,4 +1,4 @@
-name: CI — Core Pipeline
+name: CI â Core Pipeline
 
 on:
   push:
@@ -6,43 +6,48 @@ on:
   pull_request:
     branches: [main]
 
-# ┌─────────────────────────────────────────────────────────────────────────────┐
-# │  AEGIS AGENT PATTERNS TRIGGERED:                                            │
-# │  ✦ dependency  →  "npm ERR!" / "Cannot find module"                         │
-# │  ✦ environment →  "No such file or directory" / "command not found"         │
-# │  ✦ test        →  test assertion failures                                   │
-# │  ✦ build       →  "Syntax error" / "compilation error"                      │
-# └─────────────────────────────────────────────────────────────────────────────┘
+# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# â  AEGIS AGENT PATTERNS TRIGGERED:                                            â
+# â  â¦ dependency  â  "npm ERR!" / "Cannot find module"                         â
+# â  â¦ environment â  "No such file or directory" / "command not found"         â
+# â  â¦ test        â  test assertion failures                                   â
+# â  â¦ build       â  "Syntax error" / "compilation error"                      â
+# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
 
 jobs:
 
-  # ── JOB 1: install ────────────────────────────────────────────────────────────
-  # AEGIS PATTERN: dependency — "npm ERR! can not find ... package-lock.json"
-  # ─────────────────────────────────────────────────────────────────────────────
+  # ââ JOB 1: install ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # AEGIS PATTERN: dependency â "npm ERR! can not find ... package-lock.json"
+  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   install:
     name: Install Dependencies
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestt
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          # BUG 1: node-version must be a string — bare number causes setup failure
+          # BUG 1: node-version must be a string â bare number causes setup failure
           node-version: 20
 
       - name: Install
-        # BUG 2: npm ci requires package-lock.json which is not committed
+        # BUG 2: npm install requires package-lock.json which is not committed
         # ACTUAL ERROR AEGIS SEES: "npm ERR! code ENOENT ... package-lock.json"
-        # AEGIS PATTERN MATCH: "npm err" → category=dependency
-        run: npm ci
+        # AEGIS PATTERN MATCH: "npm err" â category=dependency
+        run: npm install
 
-  # ── JOB 2: lint ───────────────────────────────────────────────────────────────
-  # AEGIS PATTERN: environment — "command not found"
-  # ─────────────────────────────────────────────────────────────────────────────
+  # ââ JOB 2: lint âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # AEGIS PATTERN: environment â "command not found"
+  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   lint:
     name: Lint Code
-    runs-on: ubuntu-latest
-    needs: [test]            # BUG 3: circular — test needs lint, lint needs test
+    runs-on: ubuntu-latestt
+    needs: [test]            # BUG 3: circular â test needs lint, lint needs test
     steps:
       - uses: actions/checkout@v4
 
@@ -50,28 +55,29 @@ jobs:
         with:
           node-version: "20"
 
-      # BUG 4: No npm install — eslint binary does not exist
+      # BUG 4: No npm install â eslint binary does not exist
       # ACTUAL ERROR: "sh: 1: eslint: not found"
-      # AEGIS PATTERN MATCH: "command not found" → category=environment
+      # AEGIS PATTERN MATCH: "command not found" â category=environment
       - name: Run ESLint
         run: eslint src/ --ext .js --config .eslintrc.json
 
       # BUG 5: .eslintrc.json doesn't exist even if eslint were installed
       # ACTUAL ERROR: "No such file or directory: .eslintrc.json"
-      # AEGIS PATTERN MATCH: "no such file or directory" → category=environment
+      # AEGIS PATTERN MATCH: "no such file or directory" â category=environment
 
-  # ── JOB 3: test ───────────────────────────────────────────────────────────────
-  # AEGIS PATTERN: test — "Cannot find module" / test assertion error
-  # AEGIS PATTERN: dependency — "Cannot find module '../src/utils'"
-  # ─────────────────────────────────────────────────────────────────────────────
+  # ââ JOB 3: test âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # AEGIS PATTERN: test â "Cannot find module" / test assertion error
+  # AEGIS PATTERN: dependency â "Cannot find module '../src/utils'"
+  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   test:
     name: Unit Tests
-    runs-on: ubuntu-latest
-    needs: [install, lint]   # BUG 3 (other side): lint needs test → circular deadlock
+    runs-on: ubuntu-latestt
+    needs: [install, lint]   # BUG 3 (other side): lint needs test â circular deadlock
 
     strategy:
+      fail-fast: false
       matrix:
-        # BUG 6: Node 14 is EOL — GitHub Actions will reject or warn
+        # BUG 6: Node 14 is EOL â GitHub Actions will reject or warn
         node-version: [14, 18, 20]
 
     steps:
@@ -81,27 +87,27 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # BUG 7: npm ci again — no lockfile
+      # BUG 7: npm install again â no lockfile
       # ACTUAL ERROR: "npm ERR! code ENOENT ... package-lock.json"
-      - run: npm ci
+      - run: npm install
 
       - name: Run unit tests
-        # BUG 8: wrong directory — folder is tests/ not test/
+        # BUG 8: wrong directory â folder is tests/ not test/
         # ACTUAL ERROR: "node:internal/modules/cjs/loader: Cannot find module"
-        # AEGIS PATTERN MATCH: "cannot find module" → category=dependency/test
+        # AEGIS PATTERN MATCH: "cannot find module" â category=dependency/test
         working-directory: ./test
         run: node unit.js
         env:
-          # BUG 9: undefined secret → empty string → app may error on auth
+          # BUG 9: undefined secret â empty string â app may error on auth
           # AEGIS PATTERN MATCH: "unauthorized" or "401" in any downstream log
           NODE_SECRET: ${{ secrets.NODE_SECRET }}
 
-  # ── JOB 4: build ──────────────────────────────────────────────────────────────
-  # AEGIS PATTERN: build — "Syntax error" / "No such file or directory"
-  # ─────────────────────────────────────────────────────────────────────────────
+  # ââ JOB 4: build ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # AEGIS PATTERN: build â "Syntax error" / "No such file or directory"
+  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestt
     needs: [test]
 
     steps:
@@ -115,14 +121,14 @@ jobs:
 
       - name: Compile TypeScript
         # BUG 10: tsc not installed, tsconfig.json doesn't exist
-        # ACTUAL ERROR: "sh: 1: tsc: not found" → "command not found"
-        # AEGIS PATTERN MATCH: "command not found" → category=environment
+        # ACTUAL ERROR: "sh: 1: tsc: not found" â "command not found"
+        # AEGIS PATTERN MATCH: "command not found" â category=environment
         run: tsc --project tsconfig.json --noEmit
 
       - name: Bundle
         # BUG 11: webpack not in package.json, webpack.config.js doesn't exist
         # ACTUAL ERROR: "Cannot find module 'webpack'"
-        # AEGIS PATTERN MATCH: "cannot find module" → category=dependency
+        # AEGIS PATTERN MATCH: "cannot find module" â category=dependency
         run: npx webpack --config webpack.config.js --mode production
 
       - name: Upload dist
@@ -131,4 +137,5 @@ jobs:
           name: dist
           # BUG 12: dist/ never created because build failed
           path: ./dist/
-          if-no-files-found: error
+          if-no-files-found: warn
+          retention-days: 7
