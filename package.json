@@ -1,0 +1,13 @@
+{
+  "name": "aegis-ultimate-test",
+  "version": "1.0.0",
+  "description": "Ultimate AEGIS healing stress test — hits all 10 error categories",
+  "scripts": {
+    "test": "node tests/unit.js",
+    "build": "echo 'build complete'",
+    "lint": "echo 'lint ok'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

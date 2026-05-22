@@ -1,0 +1,165 @@
+name: Deploy & Notify
+
+on:
+  push:
+    branches: [main]
+
+# ┌─────────────────────────────────────────────────────────────────────────────┐
+# │  AEGIS AGENT PATTERNS TRIGGERED:                                            │
+# │  ✦ network  →  "connection refused" / "ECONNREFUSED" / "network timeout"   │
+# │  ✦ memory   →  "out of memory" / "heap out of memory"                      │
+# │  ✦ build    →  "syntax error" / "compilation error"                        │
+# │  ✦ auth     →  "permission denied" / "401"                                 │
+# └─────────────────────────────────────────────────────────────────────────────┘
+
+jobs:
+
+  # ── JOB 8: pre-deploy ─────────────────────────────────────────────────────────
+  # AEGIS PATTERN: build — "syntax error" from Python type error
+  # AEGIS PATTERN: environment — "No such file or directory"
+  # ─────────────────────────────────────────────────────────────────────────────
+  pre-deploy:
+    name: Pre-Deploy Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          # BUG 27: Must be a string — bare number is a type error
+          # ACTUAL ERROR: "python-version must be a string"
+          # AEGIS PATTERN MATCH: "syntax error" / "compilation error" → category=build
+          python-version: 3.11
+
+      - name: Install validator
+        # BUG 28: Typo in pip flag — "packges" not "packages"
+        # ACTUAL ERROR: "ERROR: unknown option: --break-system-packges"
+        # AEGIS PATTERN MATCH: "command not found" equivalent → category=environment
+        run: pip install pyyaml requests --break-system-packges
+
+      - name: Validate deploy config
+        # BUG 29: File doesn't exist
+        # ACTUAL ERROR: "python: can't open file 'scripts/validate.py': No such file or directory"
+        # AEGIS PATTERN MATCH: "no such file or directory" → category=environment
+        run: python scripts/validate.py
+
+  # ── JOB 9: memory-intensive-build ────────────────────────────────────────────
+  # AEGIS PATTERN: memory — "heap out of memory" / "out of memory"
+  # ─────────────────────────────────────────────────────────────────────────────
+  memory-build:
+    name: Memory-Intensive Build
+    runs-on: ubuntu-latest
+    needs: [pre-deploy]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - run: npm install
+
+      - name: Build with insufficient memory
+        # BUG 30: --max-old-space-size=64 is absurdly low (64MB) for any real build
+        # ACTUAL ERROR: "FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory"
+        # AEGIS PATTERN MATCH: "heap out of memory" → category=memory
+        run: node --max-old-space-size=64 node_modules/.bin/webpack --mode production
+
+      - name: Run memory-heavy tests
+        # BUG 31: --max-old-space-size still too low for test runner + source loading
+        # ACTUAL ERROR: "Killed" / "OOMKilled"
+        # AEGIS PATTERN MATCH: "oomkilled" / "out of memory" → category=memory
+        run: node --max-old-space-size=32 tests/unit.js
+
+  # ── JOB 10: deploy-staging ───────────────────────────────────────────────────
+  # AEGIS PATTERN: network — "ECONNREFUSED" / "connection refused"
+  # AEGIS PATTERN: auth    — "permission denied" SSH
+  # ─────────────────────────────────────────────────────────────────────────────
+  deploy-staging:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    needs: [memory-build]
+    environment: staging
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - run: npm install
+
+      - name: Run build:staging
+        # BUG 32: Script doesn't exist in package.json
+        # ACTUAL ERROR: "npm ERR! Missing script: build:staging"
+        # AEGIS PATTERN MATCH: "npm err" → category=dependency
+        run: npm run build:staging
+
+      - name: Health check before deploy
+        # BUG 33: staging.example.internal is unreachable — ECONNREFUSED
+        # ACTUAL ERROR: "curl: (7) Failed to connect to staging.example.internal: Connection refused"
+        # AEGIS PATTERN MATCH: "connection refused" / "econnrefused" → category=network
+        run: |
+          curl --retry 3 --retry-delay 5 -f https://staging.example.internal/health \
+            || echo "Health check failed: ECONNREFUSED"
+          exit 1
+
+      - name: Deploy via SSH
+        # BUG 34: No SSH key configured — will get permission denied
+        # ACTUAL ERROR: "Permission denied (publickey)"
+        # AEGIS PATTERN MATCH: "permission denied" → category=auth
+        run: |
+          ssh -o StrictHostKeyChecking=no \
+              -o ConnectTimeout=10 \
+              deploy@staging.example.internal \
+              "cd /app && git pull && npm install && pm2 restart app"
+
+      - name: Wait for service
+        # BUG 35: Service never starts (deploy failed) — this will ETIMEDOUT
+        # ACTUAL ERROR: "curl: (28) Operation timed out"
+        # AEGIS PATTERN MATCH: "etimedout" / "network timeout" → category=network
+        run: |
+          for i in {1..10}; do
+            curl -f https://staging.example.internal/health && exit 0
+            sleep 5
+          done
+          echo "Service failed to start: network timeout"
+          exit 1
+
+  # ── JOB 11: notify ───────────────────────────────────────────────────────────
+  # AEGIS PATTERN: network — "connection refused" to Slack webhook
+  # AEGIS PATTERN: auth    — "401 Unauthorized" from Slack
+  # ─────────────────────────────────────────────────────────────────────────────
+  notify:
+    name: Notify Team
+    runs-on: ubuntu-latest
+    needs: [deploy-staging]
+    if: always()
+
+    steps:
+      - name: Notify via Slack
+        # BUG 36: Non-existent action version
+        uses: slackapi/slack-github-action@v1.99.99
+        with:
+          payload: |
+            {
+              "text": "Deploy ${{ job.status }}: ${{ github.repository }}@${{ github.sha }}"
+            }
+        env:
+          # BUG 37: Webhook secret not defined → empty URL → "connection refused"
+          # ACTUAL ERROR: "Error: ECONNREFUSED" or "401 Unauthorized" from Slack API
+          # AEGIS PATTERN MATCH: "econnrefused" / "unauthorized" → network + auth
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: Update deployment status
+        # BUG 38: DEPLOYMENT_API_KEY not defined → 401 from status API
+        # ACTUAL ERROR: "curl: (22) The requested URL returned error: 401 Unauthorized"
+        # AEGIS PATTERN MATCH: "401" / "unauthorized" → category=auth
+        run: |
+          curl -X POST https://api.deploymentstatus.example.com/update \
+            -H "Authorization: Bearer ${{ secrets.DEPLOYMENT_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{"status":"deployed","sha":"${{ github.sha }}"}'
