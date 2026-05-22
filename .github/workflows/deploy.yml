@@ -8,55 +8,55 @@ on:
   push:
     branches: [main]
 
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-# â  AEGIS AGENT PATTERNS TRIGGERED:                                            â
-# â  â¦ network  â  "connection refused" / "ECONNREFUSED" / "network timeout"   â
-# â  â¦ memory   â  "out of memory" / "heap out of memory"                      â
-# â  â¦ build    â  "syntax error" / "compilation error"                        â
-# â  â¦ auth     â  "permission denied" / "401"                                 â
-# âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+# Ã¢ÂÂ  AEGIS AGENT PATTERNS TRIGGERED:                                            Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ network  Ã¢ÂÂ  "connection refused" / "ECONNREFUSED" / "network timeout"   Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ memory   Ã¢ÂÂ  "out of memory" / "heap out of memory"                      Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ build    Ã¢ÂÂ  "syntax error" / "compilation error"                        Ã¢ÂÂ
+# Ã¢ÂÂ  Ã¢ÂÂ¦ auth     Ã¢ÂÂ  "permission denied" / "401"                                 Ã¢ÂÂ
+# Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
 env:
   NODE_ENV: test
 
 jobs:
 
-  # ââ JOB 8: pre-deploy âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: build â "syntax error" from Python type error
-  # AEGIS PATTERN: environment â "No such file or directory"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 8: pre-deploy Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: build Ã¢ÂÂ "syntax error" from Python type error
+  # AEGIS PATTERN: environment Ã¢ÂÂ "No such file or directory"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   pre-deploy:
     name: Pre-Deploy Validation
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          # BUG 27: Must be a string â bare number is a type error
+          # BUG 27: Must be a string Ã¢ÂÂ bare number is a type error
           # ACTUAL ERROR: "python-version must be a string"
-          # AEGIS PATTERN MATCH: "syntax error" / "compilation error" â category=build
+          # AEGIS PATTERN MATCH: "syntax error" / "compilation error" Ã¢ÂÂ category=build
           python-version: 3.11
 
       - name: Install validator
-        # BUG 28: Typo in pip flag â "packges" not "packages"
+        # BUG 28: Typo in pip flag Ã¢ÂÂ "packges" not "packages"
         # ACTUAL ERROR: "ERROR: unknown option: --break-system-packges"
-        # AEGIS PATTERN MATCH: "command not found" equivalent â category=environment
+        # AEGIS PATTERN MATCH: "command not found" equivalent Ã¢ÂÂ category=environment
         run: pip install --no-cache-dir pyyaml requests --break-system-packges
 
       - name: Validate deploy config
         # BUG 29: File doesn't exist
         # ACTUAL ERROR: "python: can't open file 'scripts/validate.py': No such file or directory"
-        # AEGIS PATTERN MATCH: "no such file or directory" â category=environment
+        # AEGIS PATTERN MATCH: "no such file or directory" Ã¢ÂÂ category=environment
         run: python scripts/validate.py
 
-  # ââ JOB 9: memory-intensive-build ââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: memory â "heap out of memory" / "out of memory"
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 9: memory-intensive-build Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: memory Ã¢ÂÂ "heap out of memory" / "out of memory"
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   memory-build:
     name: Memory-Intensive Build
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latest
     needs: [pre-deploy]
 
     steps:
@@ -71,22 +71,22 @@ jobs:
       - name: Build with insufficient memory
         # BUG 30: --max-old-space-size=64 is absurdly low (64MB) for any real build
         # ACTUAL ERROR: "FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory"
-        # AEGIS PATTERN MATCH: "heap out of memory" â category=memory
+        # AEGIS PATTERN MATCH: "heap out of memory" Ã¢ÂÂ category=memory
         run: node --max-old-space-size=64 node_modules/.bin/webpack --mode production
 
       - name: Run memory-heavy tests
         # BUG 31: --max-old-space-size still too low for test runner + source loading
         # ACTUAL ERROR: "Killed" / "OOMKilled"
-        # AEGIS PATTERN MATCH: "oomkilled" / "out of memory" â category=memory
+        # AEGIS PATTERN MATCH: "oomkilled" / "out of memory" Ã¢ÂÂ category=memory
         run: node --max-old-space-size=32 tests/unit.js
 
-  # ââ JOB 10: deploy-staging âââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: network â "ECONNREFUSED" / "connection refused"
-  # AEGIS PATTERN: auth    â "permission denied" SSH
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 10: deploy-staging Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: network Ã¢ÂÂ "ECONNREFUSED" / "connection refused"
+  # AEGIS PATTERN: auth    Ã¢ÂÂ "permission denied" SSH
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   deploy-staging:
     name: Deploy to Staging
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latest
     needs: [memory-build]
     environment: staging
 
@@ -102,22 +102,22 @@ jobs:
       - name: Run build:staging
         # BUG 32: Script doesn't exist in package.json
         # ACTUAL ERROR: "npm ERR! Missing script: build:staging"
-        # AEGIS PATTERN MATCH: "npm err" â category=dependency
+        # AEGIS PATTERN MATCH: "npm err" Ã¢ÂÂ category=dependency
         run: npm run build:staging
 
       - name: Health check before deploy
-        # BUG 33: staging.example.internal is unreachable â ECONNREFUSED
+        # BUG 33: staging.example.internal is unreachable Ã¢ÂÂ ECONNREFUSED
         # ACTUAL ERROR: "curl: (7) Failed to connect to staging.example.internal: Connection refused"
-        # AEGIS PATTERN MATCH: "connection refused" / "econnrefused" â category=network
+        # AEGIS PATTERN MATCH: "connection refused" / "econnrefused" Ã¢ÂÂ category=network
         run: |
           curl --retry 3 --retry-delay 5 -f https://staging.example.internal/health \
             || echo "Health check failed: ECONNREFUSED"
           exit 1
 
       - name: Deploy via SSH
-        # BUG 34: No SSH key configured â will get permission denied
+        # BUG 34: No SSH key configured Ã¢ÂÂ will get permission denied
         # ACTUAL ERROR: "Permission denied (publickey)"
-        # AEGIS PATTERN MATCH: "permission denied" â category=auth
+        # AEGIS PATTERN MATCH: "permission denied" Ã¢ÂÂ category=auth
         run: |
           ssh -o StrictHostKeyChecking=no \
               -o ConnectTimeout=10 \
@@ -125,9 +125,9 @@ jobs:
               "cd /app && git pull && npm install && pm2 restart app"
 
       - name: Wait for service
-        # BUG 35: Service never starts (deploy failed) â this will ETIMEDOUT
+        # BUG 35: Service never starts (deploy failed) Ã¢ÂÂ this will ETIMEDOUT
         # ACTUAL ERROR: "curl: (28) Operation timed out"
-        # AEGIS PATTERN MATCH: "etimedout" / "network timeout" â category=network
+        # AEGIS PATTERN MATCH: "etimedout" / "network timeout" Ã¢ÂÂ category=network
         run: |
           for i in {1..10}; do
             curl -f https://staging.example.internal/health && exit 0
@@ -136,13 +136,13 @@ jobs:
           echo "Service failed to start: network timeout"
           exit 1
 
-  # ââ JOB 11: notify âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  # AEGIS PATTERN: network â "connection refused" to Slack webhook
-  # AEGIS PATTERN: auth    â "401 Unauthorized" from Slack
-  # âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  # Ã¢ÂÂÃ¢ÂÂ JOB 11: notify Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  # AEGIS PATTERN: network Ã¢ÂÂ "connection refused" to Slack webhook
+  # AEGIS PATTERN: auth    Ã¢ÂÂ "401 Unauthorized" from Slack
+  # Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   notify:
     name: Notify Team
-    runs-on: ubuntu-latestt
+    runs-on: ubuntu-latest
     needs: [deploy-staging]
     if: always()
 
@@ -151,22 +151,24 @@ jobs:
         # BUG 36: Non-existent action version
         uses: slackapi/slack-github-action@v1.99.99
           continue-on-error: true  # aegis: SLACK_BOT_TOKEN / SLACK_WEBHOOK_URL may not be configured
+          continue-on-error: true  # aegis: SLACK_BOT_TOKEN / SLACK_WEBHOOK_URL may not be configured
         with:
           payload: |
             {
               "text": "Deploy ${{ job.status }}: ${{ github.repository }}@${{ github.sha }}"
             }
         env:
-          # BUG 37: Webhook secret not defined â empty URL â "connection refused"
+          # BUG 37: Webhook secret not defined Ã¢ÂÂ empty URL Ã¢ÂÂ "connection refused"
           # ACTUAL ERROR: "Error: ECONNREFUSED" or "401 Unauthorized" from Slack API
-          # AEGIS PATTERN MATCH: "econnrefused" / "unauthorized" â network + auth
+          # AEGIS PATTERN MATCH: "econnrefused" / "unauthorized" Ã¢ÂÂ network + auth
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          continue-on-error: true  # aegis: SLACK_BOT_TOKEN / SLACK_WEBHOOK_URL may not be configured
           continue-on-error: true  # aegis: SLACK_BOT_TOKEN / SLACK_WEBHOOK_URL may not be configured
 
       - name: Update deployment status
-        # BUG 38: DEPLOYMENT_API_KEY not defined â 401 from status API
+        # BUG 38: DEPLOYMENT_API_KEY not defined Ã¢ÂÂ 401 from status API
         # ACTUAL ERROR: "curl: (22) The requested URL returned error: 401 Unauthorized"
-        # AEGIS PATTERN MATCH: "401" / "unauthorized" â category=auth
+        # AEGIS PATTERN MATCH: "401" / "unauthorized" Ã¢ÂÂ category=auth
         run: |
           curl -X POST https://api.deploymentstatus.example.com/update \
             -H "Authorization: Bearer ${{ secrets.DEPLOYMENT_API_KEY }}" \
